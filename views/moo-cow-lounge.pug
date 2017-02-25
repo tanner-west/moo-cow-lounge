@@ -1,0 +1,59 @@
+doctype html
+html
+ head
+ meta(name="viewport" content="width=device-width, initial-scale=1")
+ meta(charset='utf-8')
+ link(href='/css/eat.css', rel='stylesheet')
+ meta(charset="utf-8")
+
+
+
+
+ script(src="https://code.jquery.com/jquery-3.1.1.js")
+
+body(onload="init()")
+  div#display
+
+    div#logo
+      h1#title Moo Cow Lounge
+      div#cow
+        img#img(src='images/woc.png')
+      ul#nav
+        li 
+         a(href="#menu") Menu
+        li 
+         a(href="#chef") The Chef
+        li 
+         a(href="#promise") Our Promise
+        li
+         a(href="#location") Find Us
+  div#menu.section
+    div#menu-content.section-content
+      h2.section-header Our Menu
+      ul#menu-list
+       li Dish
+        span 3
+       li Cone
+        span 4
+       li Coffee
+        span 3
+       li Latte
+        span 4
+       li Chocolate Milk
+        span 3
+       li Special Milk
+        span 6
+  div#promise.section
+    div#promise-content.section-content
+      h2.section-header Our Promise
+      p Everyone at Moo Cow Lounge is committed to bringing you the freshest ice cream and milk - sourced only from local, sustainable farms - with a friendly smile and dependable service.
+      p We offer a full-range of non-dairy alternatives to our ice cream, milk, and cream made from organic, non-GMO soy, almond, and cashew milk. Ask about our gluten-free and vegan menu options.
+  div#chef.section
+    div#chef-content.section-content
+
+      h2.section-header The Chef
+      p Chef Cowman grew up on a dairy farm and has been churning ice cream since he was two. He brings his passion for dairy into the Moo Cow kitchen every day and creates world-class ice cream in traditional and experimental flavors.
+  
+  div.section
+script(type='text/javascript', src='eat.js')
+
