@@ -6,7 +6,7 @@ html
   meta(charset='utf-8')
   script(src="https://code.jquery.com/jquery-3.1.1.js")
 
-body(onload="init()")
+bodyS
   div#display
 
     div#logo
@@ -49,6 +49,20 @@ body(onload="init()")
       h2.section-header The Chef
       p Chef Cowman grew up on a dairy farm and has been churning ice cream since he was two. He brings his passion for dairy into the Moo Cow kitchen every day and creates world-class ice cream in traditional and experimental flavors.
   
-  div.section
-script(type='text/javascript', src='eat.js')
-
+  div.section#location
+    div#map
+    div.section-content#map-content
+      h2.section-header Find Us
+      p 1200 Dusty Trail Road, Coweta, Oklahoma
+      p Open Monday-Saturday 6 AM - 10 PM
+      p Closed Sunday
+script.
+  function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 35.9518, lng: -95.6508},
+          scrollwheel: false,
+          zoom: 11
+        });
+      }
+script('src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5iGenv60inoJ4DfmOQb7hAzUBjtHL2js&callback=initMap" async defer')

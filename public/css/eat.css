@@ -30,7 +30,11 @@ html * a:hover {
 }
 
 
-
+#map {
+	height: 100%;
+	z-index: -1;
+	position: relative;
+}
 
 
 #display * h1 {
@@ -111,7 +115,7 @@ html * a:hover {
 .section {
 	position: relative;
 	width: 100%;
-	height: 600px;
+	height: 100vh;
 	color: white;
 	translate: 0 0;
 	transition: all 1s;
@@ -127,6 +131,9 @@ html * a:hover {
 	width: 33%;
 	height: 80%;
 	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+	padding: 20px;
+	z-index: 1;
 
 
 }
@@ -165,7 +172,7 @@ html * a:hover {
 	right: 10%;
 
 }
-#promise-content {
+#promise-content, #map-content {
 	left: 10%;
 }
 #promise {
@@ -211,9 +218,9 @@ html * {
 
 #logo {
 	width: 90%;
-	height: 90%
 	margin: auto;
 	transform: translate(0, 25%);
+	padding: 20px;
 }
 
 #logo * {
