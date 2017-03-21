@@ -64,5 +64,10 @@ script.
           scrollwheel: false,
           zoom: 11
         });
+        var marker = new google.maps.Marker({
+          position: {lat: 35.9518, lng: -95.6508},
+          map: map,
+          title: 'Hello World!'
+        });
       }
 script('src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5iGenv60inoJ4DfmOQb7hAzUBjtHL2js&callback=initMap" async defer')
