@@ -18,13 +18,13 @@ html, body {
 h2 {
 	font-size: 2em;
 }
-html * a {
+body a {
 	text-decoration: none;
 	font-size: 24px;
 }
 
 
-html * a:hover {
+body a:hover {
 	text-decoration: none;
 	font-size: 24px;
 }
@@ -37,7 +37,7 @@ html * a:hover {
 }
 
 
-#display * h1 {
+#display h1 {
 	font-size: 2em;
 	text-align: center;
 	color: white;
